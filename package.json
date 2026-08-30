@@ -1,0 +1,23 @@
+{
+  "name": "bharat-secure-vote",
+  "version": "1.0.0",
+  "description": "Bhārat Secure Vote — a simple decentralized voting system demo (student project)",
+  "private": true,
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "node": "npx hardhat node",
+    "deploy:local": "npx hardhat run scripts/deploy.js --network localhost",
+    "deploy:sepolia": "npx hardhat run scripts/deploy.js --network sepolia"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.5"
+  },
+  "overrides": {
+    "source-map-support": {
+      "source-map": "0.7.4"
+    }
+  }
+}
